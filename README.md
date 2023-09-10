@@ -7,5 +7,5 @@ Presentation materials for the ORConf talk:
 Related repositories:
 
  * [hardware designs](https://github.com/ak-fau/gmm7550)
- * [control application](https://github.com/ak-fau/gmm7550-examples)
- * [VHDL code examples](https://github.com/ak-fau/gmm7550-control)
+ * [control application](https://github.com/ak-fau/gmm7550-control)
+ * [VHDL code examples](https://github.com/ak-fau/gmm7550-examples)
