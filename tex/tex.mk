@@ -13,7 +13,7 @@ VCARD := github-vcard.png
 RM := rm -f
 SED := sed
 CP  := cp
-TEX := pdflatex
+TEX := pdflatex --shell-escape
 RST2PDF := rst2pdf
 
 .PHONY: all pdf clean distclean
