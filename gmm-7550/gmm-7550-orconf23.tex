@@ -12,7 +12,7 @@
   \titlepage
 \end{frame}
 
-\section{Intro}
+\section{Introduction}
 
 \input{../tex/who_am_i.tex}
 
@@ -27,7 +27,7 @@
   \begin{itemize}
     \item a new kid on the block
     \item FOSS commitment (Yosys for synthesis right now, \texttt{nextpnr}
-    in a roadmap)
+    announced)
     \item semi-documented (and semi-open) bitstream format
     \item possibility to change configuration at run-time from inside
   \end{itemize}
@@ -39,7 +39,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Why to design a Module}
+  \frametitle{Why design a Module}
 
   \begin{flushright}
     \includegraphics[height=3.5cm]{GMM-7550_preview_2020-10-01.png}
@@ -48,8 +48,8 @@
 
   \begin{minipage}{9cm}
   \begin{itemize}
-    \item an Evaluation Kit was available back in mid 2020
-    \item a module is smaller and may be reused
+    \item an Evaluation Kit was not available back in mid-2020
+    \item a module is smaller and reusable
     \item freedom for experiments\\(e.g. to interconnect several FPGAs)
     \item best way to get to know a new chip
     \item fun and easy exercise with KiCAD\\(at least it seemed so at the beginning)
@@ -61,8 +61,8 @@
 \begin{frame}
   \frametitle{Current Status}
   \begin{itemize}
-    \item three boards are designed and manufactured
-    \item the boards are fully functional (from the first versions and
+    \item three boards designed and manufactured
+    \item the boards are functional (from the very first versions and
     with just a few minor problems)
     \item schematic symbol and PCB footprint for GateMate FPGA are accepted
     into KiCAD v7 libraries
@@ -89,7 +89,7 @@
   \item dual-ported block RAM
   \item 5 Gbps SerDes
   \item configuration via QSPI up to 100 MHz
-  \item all pins configurable as single ended (1.2 .. 2.5V) or LVDS
+  \item all pins configurable as single-ended (1.2 .. 2.5V) or LVDS
   \item all GPIO blocks support DDR
   \item 324-ball BGA, 15x15mm
   \end{itemize}
@@ -136,7 +136,7 @@
   \begin{minipage}{9cm}
   \begin{itemize}
   \item Cologne Chip GateMate FPGA CCGM1A1
-  \item wide range input power
+  \item wide-range input power
   \item module control: discrete signals and I$^2$C
   \item 8 I/O banks available on 4 connectors\\with identical pinout
   \item 5 Gbps SerDes
@@ -153,12 +153,12 @@
   \item wide input range (2.9 .. 6.5V), may be powered directly from a
   3.3V baseboard, 5V USB, or single cell Li-Pol
   \item DC-DC are synchronized to the base clock and run in
-  contr-phase (default 1.25~MHz, PLL programming option)
-  \item 0.9/1.0/1.1V V$_{\text{core}}$ (build time option)
+  counter-phase (default 1.25~MHz, PLL programming option)
+  \item 0.9/1.0/1.1V V$_{\text{core}}$ (build-time option)
   \item V$_{\text{io}}$ may be supplied directly on the module (2.5V, build-time
   option) or from\\a baseboard (individually for each I/O bank)
   \item ADP2164 step-down DC-DC, V$_{\text{io}}$ (2.5V) and V$_{\text{core}}$ are rated up to 4A
-  \item separate LDO (ADP1753) for SerDes and SedDes PLL, 1.0/1.1V, 800mA
+  \item separate LDO (ADP1753) for SerDes and SerDes PLL, 1.0/1.1V, 800mA
   \item input voltage monitor/reset generator on the module, an
   external reset input, and I$^2$C controllable reset
   \end{itemize}
@@ -183,7 +183,7 @@
   \item Active Serial mode from SPI-NOR on the module or on a
   baseboard
   \item Passive Serial mode from a baseboard
-  \item configuration mode and SPI connection are configurable via I$^2$C
+  \item configuration mode and SPI connection configurable via I$^2$C
   \item SPI-NOR on the module is accessible from a baseboard
   \item \textbf{default mode:} Active Serial from SPI-NOR on the module
   \end{itemize}
@@ -204,7 +204,7 @@
   \item current and voltage monitoring (ADM1177)
   \item module control signals, I$^2$C, SPI, and UART
   \item 2x5 .1'' JTAG connector
-  \item 2.5V/3.3V IO level converters
+  \item 2.5V/3.3V I/O level converters
   \item two 12-pin P-mod connectors for extension modules
   \item access to 3 I/O connectors
   \item 4x LEDs
@@ -276,8 +276,10 @@
   \frametitle{Next steps -- for myself}
 
   To keep in mind in the future, that creating an open source hardware
-  design is the same efforts and responsibilities as doing it ``for
+  design takes the same effort and responsibilities as doing it ``for
   money'', but more demanding, and no doubt much more fun.
+
+  \vspace{.5cm}
 
   \begin{itemize}
   \item test remaining things (SerDes, SRAM, ID EEPROM,
@@ -294,16 +296,16 @@
   \frametitle{Next steps -- for everybody}
 
   The greatest engineering reward and pleasure is to see the results
-  of the efforts are used by people, so, please
+  of the efforts used by people, so, please:
+
+  \vspace{.5cm}
 
   \begin{itemize}
-  \item build modules
-  \item design baseboards
-  \item design extension modules
+  \item build modules, design baseboards and extension modules
   \item report problems
   \item create custom designs
   \item experiment
-  \item share your results, if you are willing and can do it
+  \item share your results
   \end{itemize}
 
 \end{frame}
